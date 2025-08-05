@@ -1,0 +1,10 @@
+name: 'Request Codeowner Reviews'
+description: 'Automatically request reviews from codeowners for changed files in a pull request'
+inputs:
+  token:
+    description: 'GitHub token with pull request write permissions'
+    required: true
+    default: ${{ github.token }}
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

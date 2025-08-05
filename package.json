@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build": "ncc build --minify src/index.ts",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "@vercel/ncc": "^0.38.3",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1",
+    "codeowners-utils": "^1.0.2"
+  }
+}
