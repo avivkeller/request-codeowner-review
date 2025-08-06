@@ -5,6 +5,14 @@ inputs:
     description: 'GitHub token with pull request write permissions'
     required: true
     default: ${{ github.token }}
+  fail-on-error:
+    description: 'Whether to fail the action when an error occurs'
+    required: false
+    default: 'true'
+  output-mode:
+    description: "How to notify codeowners: 'review' to request reviews, 'comment' to add a comment"
+    required: false
+    default: 'review'
 runs:
   using: 'node20'
   main: 'dist/index.js'

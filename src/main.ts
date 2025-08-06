@@ -1,0 +1,3 @@
+import processCodeownerReviewRequest from '.';
+
+processCodeownerReviewRequest();
